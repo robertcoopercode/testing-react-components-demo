@@ -36,8 +36,8 @@ export class Checklist extends React.Component<ChecklistProps, ChecklistState> {
     });
   };
 
-  // Determine if all tasks are completed
   render() {
+    // Determine if all tasks are completed
     const allTasksCompleted = this.state.checklistItems.every(
       ({ completed }) => completed
     );
